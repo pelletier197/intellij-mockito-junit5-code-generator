@@ -1,4 +1,4 @@
-package com.sunny.plugin.action;
+package com.pelletier197.plugin.action;
 
 import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.actionSystem.DataContext;
