@@ -34,8 +34,9 @@
         </ul>
       </p>
       <p>
-        Project is an open source project available at <a>https://gitlab.com/pelletier197/intellij-mockito-junit-5-code-generator</a>. Feel free to suggest new features or do merge requests.
+        Project is an open source project available on <a href="https://github.com/pelletier197/intellij-mockito-junit5-code-generator">GitHub</a>. Feel free to suggest new features or open merge requests.
       </p>
+
       <p>Plugin was modified from an existing plugin: <a>https://github.com/przemyslawj/mockito-intellij-plugin</a> and then modified to use JUnit 5 and generate nested class methods.
     ]]></description>
 
