@@ -1,4 +1,4 @@
-package com.sunny.plugin.action;
+package com.pelletier197.plugin.action;
 
 import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.actionSystem.DataContext;
@@ -9,12 +9,12 @@ import com.intellij.openapi.project.Project;
 import com.intellij.psi.JavaPsiFacade;
 import com.intellij.psi.PsiJavaFile;
 import com.intellij.psi.codeStyle.JavaCodeStyleManager;
-import com.sunny.plugin.codegen.FieldsCodeInjector;
-import com.sunny.plugin.codegen.ImportOrganizer;
-import com.sunny.plugin.codegen.NestedInnerTestClassInjector;
-import com.sunny.plugin.codegen.RunnerCodeInjector;
-import com.sunny.plugin.codegen.StaticImportsInjector;
-import com.sunny.plugin.codegen.utils.CommonCodeInjector;
+import com.pelletier197.plugin.codegen.FieldsCodeInjector;
+import com.pelletier197.plugin.codegen.NestedInnerTestClassInjector;
+import com.pelletier197.plugin.codegen.RunnerCodeInjector;
+import com.pelletier197.plugin.codegen.ImportOrganizer;
+import com.pelletier197.plugin.codegen.StaticImportsInjector;
+import com.pelletier197.plugin.codegen.utils.CommonCodeInjector;
 
 public class GenMockitoActionHandler extends EditorWriteActionHandler {
 

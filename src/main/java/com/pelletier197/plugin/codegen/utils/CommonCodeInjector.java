@@ -1,4 +1,4 @@
-package com.sunny.plugin.codegen.utils;
+package com.pelletier197.plugin.codegen.utils;
 
 import com.intellij.navigation.NavigationItem;
 import com.intellij.psi.JavaPsiFacade;
@@ -15,7 +15,7 @@ import com.intellij.psi.codeStyle.SuggestedNameInfo;
 import com.intellij.psi.codeStyle.VariableKind;
 import com.intellij.psi.search.GlobalSearchScope;
 import com.intellij.psi.util.PsiUtil;
-import com.sunny.plugin.codegen.ImportOrganizer;
+import com.pelletier197.plugin.codegen.ImportOrganizer;
 
 import java.util.Random;
 import java.util.Set;

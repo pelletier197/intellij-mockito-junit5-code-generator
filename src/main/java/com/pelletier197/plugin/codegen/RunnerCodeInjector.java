@@ -1,10 +1,10 @@
-package com.sunny.plugin.codegen;
+package com.pelletier197.plugin.codegen;
 
 import com.intellij.psi.PsiAnnotation;
 import com.intellij.psi.PsiClass;
 import com.intellij.psi.PsiJavaFile;
 import com.intellij.psi.PsiModifierList;
-import com.sunny.plugin.codegen.utils.MockitoPluginUtils;
+import com.pelletier197.plugin.codegen.utils.MockitoPluginUtils;
 
 /**
  * Inserts annotation MockitoJUnitRunner.class annotation for the test.

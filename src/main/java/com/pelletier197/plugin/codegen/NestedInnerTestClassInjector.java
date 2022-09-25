@@ -1,4 +1,4 @@
-package com.sunny.plugin.codegen;
+package com.pelletier197.plugin.codegen;
 
 import com.intellij.navigation.NavigationItem;
 import com.intellij.openapi.project.Project;
@@ -9,8 +9,8 @@ import com.intellij.psi.PsiMethod;
 import com.intellij.psi.PsiModifier;
 import com.intellij.psi.PsiType;
 import com.intellij.psi.search.GlobalSearchScope;
-import com.sunny.plugin.codegen.utils.CommonCodeInjector;
-import com.sunny.plugin.codegen.utils.MockitoPluginUtils;
+import com.pelletier197.plugin.codegen.utils.CommonCodeInjector;
+import com.pelletier197.plugin.codegen.utils.MockitoPluginUtils;
 
 import java.util.Arrays;
 import java.util.Set;

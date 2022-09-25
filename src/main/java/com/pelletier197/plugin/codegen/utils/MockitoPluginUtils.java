@@ -1,4 +1,4 @@
-package com.sunny.plugin.codegen.utils;
+package com.pelletier197.plugin.codegen.utils;
 
 import com.intellij.psi.PsiClass;
 import com.intellij.psi.PsiJavaFile;

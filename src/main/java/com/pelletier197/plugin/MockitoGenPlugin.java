@@ -1,4 +1,4 @@
-package com.sunny.plugin;
+package com.pelletier197.plugin;
 
 import com.intellij.openapi.components.NamedComponent;
 import org.jetbrains.annotations.NotNull;
@@ -10,6 +10,6 @@ public class MockitoGenPlugin implements NamedComponent {
     @NotNull
     @Override
     public String getComponentName() {
-        return "MockitoGen";
+        return "MockitoJunit5Gen";
     }
 }

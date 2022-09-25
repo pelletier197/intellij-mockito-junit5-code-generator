@@ -1,4 +1,4 @@
-package com.sunny.plugin.codegen;
+package com.pelletier197.plugin.codegen;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.JavaPsiFacade;
