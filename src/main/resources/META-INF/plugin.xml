@@ -38,6 +38,14 @@
       </p>
 
       <p>Plugin was modified from an existing plugin: <a>https://github.com/przemyslawj/mockito-intellij-plugin</a> and then modified to use JUnit 5 and generate nested class methods.
+
+      <b>My other projects</b>
+      <ul>
+          <li><a href="https://github.com/magidoc-org/magidoc">Magidoc, a GraphQL documentation generator</a></li>
+          <li><a href="https://github.com/pelletier197/Mockkator">Mockkator, Intellij plugin to generate boilerplate code for Mockk</a></li>
+          <li><a href="https://github.com/pelletier197/Fixkture">Fixkture, an Intellij plugin that generates class instances using random fields</a></li>
+          <li><a href="https://github.com/pelletier197/kotlin-stream-csv">Kotlin stream CSV, an error-resilient CSV parser</a></li>
+      </ul>
     ]]></description>
 
     <change-notes><![CDATA[
