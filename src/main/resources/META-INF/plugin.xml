@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>com.pelletier197.plugin.MockitoGenPlugin</id>
+    <id>com.sunny.plugin.MockitoGenPlugin</id>
     <name>JUnit 5 Mockito Code Generator</name>
     <vendor email="sunnypelletier01@gmail.com" url="https://github.com/pelletier197/">Sunny Pelletier</vendor>
 

@@ -17,8 +17,6 @@ jobs:
       # Check out current repository
       - name: Fetch Sources
         uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.release.tag_name }}
 
       # Setup Java 11 environment for the next steps
       - name: Setup Java
@@ -40,4 +38,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           export VERSION=$(./gradlew properties -q | grep "version:" | awk '{print $2}')
-          gh release create $VERSION ./build/libs/*.jar --title "Release $VERSION" --generate-notes
+          gh release create --title "Release $VERSION" --generate-notes $VERSION ./build/libs/*.jar ./build/distributions/* 
