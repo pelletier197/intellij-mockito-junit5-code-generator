@@ -13,12 +13,13 @@ import com.pelletier197.plugin.codegen.utils.CommonCodeInjector;
 import com.pelletier197.plugin.codegen.utils.MockitoPluginUtils;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class NestedInnerTestClassInjector implements CodeInjector {
-  public static final String TEST_CLASS_NAME_SUFFIX = "Test";
+  public static final List<String> TEST_CLASS_NAME_SUFFIXES = List.of("Test", "IT", "Tests", "ITs", "E2E");
   public static final String TEST_NESTED_CLASS_PREFIX = "When";
   public static final String NESTED_ANNOTATION_NAME = "Nested";
   public static final String JUNIT_PACKAGE_PREFIX = "org.junit.jupiter.api.";
@@ -185,8 +186,9 @@ public class NestedInnerTestClassInjector implements CodeInjector {
 
   private String getUnderTestQualifiedClassName(PsiClass psiClass) {
     String testClassName = psiClass.getQualifiedName();
-    if (testClassName.endsWith(TEST_CLASS_NAME_SUFFIX)) {
-      return testClassName.substring(0, testClassName.length() - TEST_CLASS_NAME_SUFFIX.length());
+    final String match = TEST_CLASS_NAME_SUFFIXES.stream().filter((suffix) -> testClassName.endsWith(suffix)).findFirst().orElse(null);
+    if (match != null) {
+      return testClassName.substring(0, testClassName.length() - match.length());
     }
     return null;
   }
