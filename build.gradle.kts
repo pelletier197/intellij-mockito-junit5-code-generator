@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("org.jetbrains.intellij") version "1.9.0"
+    id("org.jetbrains.intellij") version "1.11.0"
 }
 
 group = "com.example"
@@ -13,8 +13,8 @@ repositories {
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.0")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
-    testImplementation("org.mockito:mockito-core:4.8.0")
-    testImplementation("org.mockito:mockito-junit-jupiter:4.8.0")
+    testImplementation("org.mockito:mockito-core:4.10.0")
+    testImplementation("org.mockito:mockito-junit-jupiter:4.10.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.0")
 }
 
@@ -25,7 +25,7 @@ tasks.withType<Test> {
 // Configure Gradle IntelliJ Plugin
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
-    version.set("2022.2.2")
+    version.set("2022.3.1")
     type.set("IC") // Target IDE Platform
 
     plugins.set(listOf("java"))
@@ -40,7 +40,6 @@ tasks {
 
     patchPluginXml {
         sinceBuild.set("222")
-        untilBuild.set(null as String?)
     }
 
     signPlugin {
