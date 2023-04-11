@@ -27,10 +27,6 @@ public class NestedInnerTestClassInjector implements CodeInjector {
   public static final String SETUP_METHOD_NAME = "setup";
   public static final String BEFORE_EACH_ANNOTATION_SHORT_NAME = "BeforeEach";
   public static final String BEFORE_EACH_ANNOTATION_QUALIFIED_NAME = JUNIT_PACKAGE_PREFIX + BEFORE_EACH_ANNOTATION_SHORT_NAME;
-  public static final String TEST_ANNOTATION_SHORT_NAME = "Test";
-  public static final String TEST_ANNOTATION_QUALIFIED_NAME = JUNIT_PACKAGE_PREFIX + TEST_ANNOTATION_SHORT_NAME;
-
-
   public static final String[] NON_HANDLED_METHOD_PREFIX = new String[]{"set", "toString", "equals", "canEqual", "hashCode"};
 
   private final PsiJavaFile psiJavaFile;
